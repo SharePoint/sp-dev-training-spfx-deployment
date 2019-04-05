@@ -14,6 +14,10 @@ In this lab you will learn how to deploy your SharePoint Framework (SPFx) custom
 - [Site Collection App Catalogs](./Demos/02-appcatalogs)
 - [Working with SPFx Project and Component Versions](./Demos/03-versions)
 
+## Watch the Module - Video
+
+This module has been recorded and is available in the SharePoint Development YouTube channel: [SharePoint Framework Training - Deploying SharePoint Framework Components to Production](https://www.youtube.com/watch?v=DLi6ZviEIJ8)
+
 ## Contributors
 
 | Roles                | Author(s)                                               |
