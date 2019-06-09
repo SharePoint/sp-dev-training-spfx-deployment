@@ -8,7 +8,7 @@ In this demo you will learn how to change the various version numbers in SharePo
 
 ### Update the Component's Version Number
 
-*In the previous demo, deployed a SPFx package that contained a single web part. The version of that web part was unchanged from the default version included in a newly created component: 0.0.1.*
+*In the previous demo you deployed a SPFx package that contained a single web part. The version of that web part was unchanged from the default version included in a newly created component: 0.0.1.*
 
 1. Examine the existing component's version number:
     1. Locate and open the file **./src/webparts/deploymentDemo/DeploymentDemoWebPart.manifest.json**.
@@ -29,7 +29,7 @@ In this demo you will learn how to change the various version numbers in SharePo
         gulp bundle --ship
         ```
 
-    1. Open the component's manifest file **./dist/<guid>.manifest.json**.
+    1. Open the component's manifest file **./dist/`<guid>`.manifest.json**.
     1. Notice the `version` property of the component's manifest is now `0.0.2`.
 
 ### Add a new Component to the Package
