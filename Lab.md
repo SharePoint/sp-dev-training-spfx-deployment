@@ -242,7 +242,7 @@ In this exercise you will learn how to change the various version numbers in Sha
         gulp bundle --ship
         ```
 
-    1. Open the component's manifest file **./dist/<guid>.manifest.json**.
+    1. Open the component's manifest file **./dist/`<guid>`.manifest.json**.
     1. Notice the `version` property of the component's manifest is now `0.0.2`.
 
 ### Add a new Component to the Package
