@@ -21,7 +21,7 @@ To complete this lab, you need the following:
 
 <a name="exercise1"></a>
 
-## Exercise 1: Deployment of SPFx Solutions
+## Exercise 1: Deploying SPFx Solutions
 
 In this exercise you will create a simple SharePoint Framework (SPFx) client-side web part that will be used in trying out different deployment configurations.
 

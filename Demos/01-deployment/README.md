@@ -1,4 +1,4 @@
-# Deployment of SPFx Solutions
+# Deploying SPFx Solutions
 
 In this demo you will create a simple SharePoint Framework (SPFx) client-side web part that will be used in trying out different deployment configurations.
 
