@@ -108,7 +108,7 @@ In this exercise you will create a simple SharePoint Framework (SPFx) client-sid
     1. Once the page loads, open the browser's developer tools and navigate to the **Sources** tab.
     1. Refresh the page and examine where the JavaScript bundle is being hosted.
 
-        If you have not enabled the Office 365 CDN then the bundle will be hosted from a document library named ClientSideAssets in the app catalog site.
+        If you have not enabled the Office 365 CDN then the bundle will be hosted from a document library named **ClientSideAssets** in the app catalog site.
 
         ![Screenshot of web part downloaded from the app catalog site](./Images/ex01-deploy-07.png)
 
