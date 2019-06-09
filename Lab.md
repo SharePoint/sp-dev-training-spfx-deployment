@@ -119,7 +119,7 @@ In this exercise you will create a simple SharePoint Framework (SPFx) client-sid
 ### Remove the deployed web part
 
 1. Remove the web part from the page:
-    1. selecting the trash can icon in the toolbar to the left of the web part:
+    1. Select the trash can icon in the toolbar to the left of the web part:
 
         ![Screenshot of the web part delete icon](./Images/ex01-remove-01.png)
 
