@@ -221,7 +221,7 @@ In this exercise you will learn how to change the various version numbers in Sha
 
 ### Update the Component's Version Number
 
-*In the previous exercise, deployed a SPFx package that contained a single web part. The version of that web part was unchanged from the default version included in a newly created component: 0.0.1.*
+*In the previous exercise you deployed a SPFx package that contained a single web part. The version of that web part was unchanged from the default version included in a newly created component: 0.0.1.*
 
 1. Examine the existing component's version number:
     1. Locate and open the file **./src/webparts/deploymentDemo/DeploymentDemoWebPart.manifest.json**.
