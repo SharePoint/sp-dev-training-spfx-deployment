@@ -2,7 +2,7 @@
 
 In this demo you will learn how to change the various version numbers in SharePoint Framework components and packages, as well as how this impacts your deployments.
 
-> **NOTE:** This demo assumes you completed demo 1 in creating a SPFx solution and deployed the package to a site collection scoped app catalog as demonstrated in demo 2. You can locate the solution from demo 1 in the [Demos/01-deployment](./Demos/01-deployment) folder.
+> **NOTE:** This demo assumes you completed demo 1 in creating a SPFx solution and deployed the package to a site collection scoped app catalog as demonstrated in demo 2. You can locate the solution from demo 1 in the [Demos/01-deployment](../../Demos/01-deployment) folder.
 >
 > **NOTE:** Whenever you update the code within a SPFx solution, regardless if you decide to change the version number of the SPFx component or package as demonstrated in this demo, when you upload a new package, all existing code will be updated to what is in the package.
 
