@@ -37,7 +37,7 @@ In the previous demo you worked with the Tenant-scoped App Catalog. In this demo
 1. Upload and deploy a site to the site collection app catalog:
     1. Locate the ***.sppkg** you created in the previous demo.
 
-        > NOTE: You can find the final built solution from the first demo in the [Demos/01-deployment](./Demos/01-deployment) folder.
+        > NOTE: You can find the final built solution from the first demo in the [Demos/01-deployment](../../Demos/01-deployment) folder.
 
     1. In a browser, navigate to the site collection that you created the site collection app catalog in from the previous step.
     1. Select **Site Contents** in the left-hand navigation.
