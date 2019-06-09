@@ -12,9 +12,11 @@ In the previous demo you worked with the Tenant-scoped App Catalog. In this demo
 
         ```shell
         # login as a tenant admin to the SharePoint Online tenant admin site
+        # replace the URL shown below with the URL of your SharePoint Online tenant admin site
         PS> Connect-SPOService -Url https://contoso-admin.sharepoint.com
 
         # create site collection app catalog
+        # replace the URL shown below with the URL of a site collection within your SharePoint Online tenant
         PS> Add-SPOSiteCollectionAppCatalog -Site https://contoso.sharepoint.com/sites/dev01
         ```
 
@@ -22,9 +24,11 @@ In the previous demo you worked with the Tenant-scoped App Catalog. In this demo
 
         ```shell
         # login as a tenant admin to the SharePoint Online tenant admin site
+        # replace the URL shown below with the URL of your SharePoint Online tenant admin site
         $ spo connect https://contoso-admin.sharepoint.com
 
         # create site collection app catalog
+        # replace the URL shown below with the URL of a site collection within your SharePoint Online tenant
         $ spo site appcatalog add --url https://contoso.sharepoint/sites/dev01
         ```
 
