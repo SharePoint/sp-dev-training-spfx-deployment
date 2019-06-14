@@ -17,11 +17,11 @@ To complete this lab, you need the following:
 - Local SharePoint Framework development environment installed and configured
   - Refer to the SharePoint Framework documentation, specifically the **[Getting Started > Set up development environment](https://docs.microsoft.com/sharepoint/dev/spfx/set-up-your-development-environment)** for the most current steps
   - NOTE: You will need the URL of your tenant-scoped App Catalog site.
-- Office 365 CDN is enabled in your SharePoint Online tenant, as outlined in the following help doc: [Host your client-side web part from Office 365 CDN](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn)
+- [Optional] Office 365 CDN is enabled in your SharePoint Online tenant, as outlined in the following help doc: [Host your client-side web part from Office 365 CDN](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn)
 
 <a name="exercise1"></a>
 
-## Exercise 1: Deployment SPFx Solutions
+## Exercise 1: Deploying SPFx Solutions
 
 In this exercise you will create a simple SharePoint Framework (SPFx) client-side web part that will be used in trying out different deployment configurations.
 
@@ -38,6 +38,7 @@ In this exercise you will create a simple SharePoint Framework (SPFx) client-sid
     - **Which baseline packages do you want to target for your component(s)?**: SharePoint Online only (latest)
     - **Where do you want to place the files?**: Use the current folder
     - **Do you want to allow the tenant admin the choice of being able to deploy the solution to all sites immediately without running any feature deployment or adding apps in sites?**: No
+    - **Will the components in the solution require permissions to access web APIs that are unique and not shared with other components in the tenant?**: No
     - **Which type of client-side component to create?**: WebPart
     - **What is your Web part name?**: Deployment Demo
     - **What is your Web part description?**: Deployment Demo description
@@ -105,14 +106,20 @@ In this exercise you will create a simple SharePoint Framework (SPFx) client-sid
 
 1. Examine the deployed web part files:
     1. Once the page loads, open the browser's developer tools and navigate to the **Sources** tab.
-    1. Refresh the page and notice how the JavaScript bundle is being downloaded from the Office 365 CDN for your tenant:
+    1. Refresh the page and examine where the JavaScript bundle is being hosted.
 
-        ![Screenshot of web part downloaded from the Office 365 CDN](./Images/ex01-deploy-07.png)
+        If you have not enabled the Office 365 CDN then the bundle will be hosted from a document library named **ClientSideAssets** in the app catalog site.
+
+        ![Screenshot of web part downloaded from the app catalog site](./Images/ex01-deploy-07.png)
+
+        If you have enabled the Office 365 CDN then the bundle will be automatically hosted from the CDN. 
+
+        ![Screenshot of web part downloaded from the Office 365 CDN](./Images/ex01-deploy-07a.png)
 
 ### Remove the deployed web part
 
 1. Remove the web part from the page:
-    1. selecting the trash can icon in the toolbar to the left of the web part:
+    1. Select the trash can icon in the toolbar to the left of the web part:
 
         ![Screenshot of the web part delete icon](./Images/ex01-remove-01.png)
 
@@ -145,9 +152,11 @@ In the previous exercise you worked with the Tenant-scoped App Catalog. In this 
 
         ```shell
         # login as a tenant admin to the SharePoint Online tenant admin site
+        # replace the URL shown below with the URL of your SharePoint Online tenant admin site
         PS> Connect-SPOService -Url https://contoso-admin.sharepoint.com
 
         # create site collection app catalog
+        # replace the URL shown below with the URL of a site collection within your SharePoint Online tenant
         PS> Add-SPOSiteCollectionAppCatalog -Site https://contoso.sharepoint.com/sites/dev01
         ```
 
@@ -155,9 +164,11 @@ In the previous exercise you worked with the Tenant-scoped App Catalog. In this 
 
         ```shell
         # login as a tenant admin to the SharePoint Online tenant admin site
+        # replace the URL shown below with the URL of your SharePoint Online tenant admin site
         $ spo connect https://contoso-admin.sharepoint.com
 
         # create site collection app catalog
+        # replace the URL shown below with the URL of a site collection within your SharePoint Online tenant
         $ spo site appcatalog add --url https://contoso.sharepoint/sites/dev01
         ```
 
@@ -210,7 +221,7 @@ In this exercise you will learn how to change the various version numbers in Sha
 
 ### Update the Component's Version Number
 
-*In the previous exercise, deployed a SPFx package that contained a single web part. The version of that web part was unchanged from the default version included in a newly created component: 0.0.1.*
+*In the previous exercise you deployed a SPFx package that contained a single web part. The version of that web part was unchanged from the default version included in a newly created component: 0.0.1.*
 
 1. Examine the existing component's version number:
     1. Locate and open the file **./src/webparts/deploymentDemo/DeploymentDemoWebPart.manifest.json**.
@@ -231,7 +242,7 @@ In this exercise you will learn how to change the various version numbers in Sha
         gulp bundle --ship
         ```
 
-    1. Open the component's manifest file **./dist/<guid>.manifest.json**.
+    1. Open the component's manifest file **./dist/`<guid>`.manifest.json**.
     1. Notice the `version` property of the component's manifest is now `0.0.2`.
 
 ### Add a new Component to the Package

@@ -2,13 +2,13 @@
 
 In this demo you will learn how to change the various version numbers in SharePoint Framework components and packages, as well as how this impacts your deployments.
 
-> **NOTE:** This demo assumes you completed demo 1 in creating a SPFx solution and deployed the package to a site collection scoped app catalog as demonstrated in demo 2. You can locate the solution from demo 1 in the [Demos/01-deployment](./Demos/01-deployment) folder.
+> **NOTE:** This demo assumes you completed demo 1 in creating a SPFx solution and deployed the package to a site collection scoped app catalog as demonstrated in demo 2. You can locate the solution from demo 1 in the [Demos/01-deployment](../../Demos/01-deployment) folder.
 >
 > **NOTE:** Whenever you update the code within a SPFx solution, regardless if you decide to change the version number of the SPFx component or package as demonstrated in this demo, when you upload a new package, all existing code will be updated to what is in the package.
 
 ### Update the Component's Version Number
 
-*In the previous demo, deployed a SPFx package that contained a single web part. The version of that web part was unchanged from the default version included in a newly created component: 0.0.1.*
+*In the previous demo you deployed a SPFx package that contained a single web part. The version of that web part was unchanged from the default version included in a newly created component: 0.0.1.*
 
 1. Examine the existing component's version number:
     1. Locate and open the file **./src/webparts/deploymentDemo/DeploymentDemoWebPart.manifest.json**.
@@ -29,7 +29,7 @@ In this demo you will learn how to change the various version numbers in SharePo
         gulp bundle --ship
         ```
 
-    1. Open the component's manifest file **./dist/<guid>.manifest.json**.
+    1. Open the component's manifest file **./dist/`<guid>`.manifest.json**.
     1. Notice the `version` property of the component's manifest is now `0.0.2`.
 
 ### Add a new Component to the Package
