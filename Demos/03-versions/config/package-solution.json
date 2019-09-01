@@ -1,11 +1,8 @@
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT license.
-
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
     "name": "deployment-demo-client-side-solution",
-    "id": "035f6364-390a-4309-aada-c20ddd37d5c7",
+    "id": "be6e8859-8fe8-468b-8410-3594acac9618",
     "version": "1.2.0.0",
     "includeClientSideAssets": true,
     "isDomainIsolated": false
