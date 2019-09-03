@@ -2,6 +2,8 @@
 
 In this demo you will create a simple SharePoint Framework (SPFx) client-side web part that will be used in trying out different deployment configurations.
 
+> NOTE: The instructions below assume you are using v1.9.1 of the SharePoint Framework Yeoman generator.
+
 1. Open a command prompt and change to the folder where you want to create the project.
 1. Run the SharePoint Yeoman generator by executing the following command:
 
@@ -20,8 +22,6 @@ In this demo you will create a simple SharePoint Framework (SPFx) client-side we
     - **What is your Web part name?**: Deployment Demo
     - **What is your Web part description?**: Deployment Demo description
     - **Which framework would you like to use?**: No JavaScript framework
-
-      ![Screenshot of the SPFx Yeoman Generator questions](../../Images/ex01-createProject.png)
 
     After provisioning the folders required for the project, the generator will install all the dependency packages using NPM.
 
