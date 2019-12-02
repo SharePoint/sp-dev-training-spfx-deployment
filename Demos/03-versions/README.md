@@ -2,9 +2,10 @@
 
 In this demo you will learn how to change the various version numbers in SharePoint Framework components and packages, as well as how this impacts your deployments.
 
-> **NOTE:** This demo assumes you completed demo 1 in creating a SPFx solution and deployed the package to a site collection scoped app catalog as demonstrated in demo 2. You can locate the solution from demo 1 in the [Demos/01-deployment](../../Demos/01-deployment) folder.
+> **NOTE:** This exercise assumes you completed both exercise 1 and exercise 2. That is, you've deployed the package to a site collection-scoped app catalog. You can locate the solution from exercise 1 in the [Demos/01-deployment](../../Demos/01-deployment) folder.
 >
-> **NOTE:** Whenever you update the code within a SPFx solution, regardless if you decide to change the version number of the SPFx component or package as demonstrated in this demo, when you upload a new package, all existing code will be updated to what is in the package.
+> **NOTE:** Regardless if you decide to change the version number of the SPFx component or package as demonstrated in this exercise, when you upload a new package all existing code will be updated to what is in that package.
+
 
 ### Update the Component's Version Number
 
@@ -91,7 +92,7 @@ In this demo you will learn how to change the various version numbers in SharePo
     1. Select the expand icon, a diagonal line with two arrows in the top right corner, to expand the web part toolbox:
     1. Scroll to the bottom and notice the new web part is not listed. This is because web parts are added to the web part gallery by activating a feature.
 
-> When the package was deployed the features within it were activated. Without versioning the package, SharePoint does not see any changes within the package and thus, it does not reactivate any existing, or activate any new features.
+> When the package was deployed, the features within it were activated. Without versioning the package, SharePoint does not see any changes within it, thus it does not activate or reactivate any new or existing features.
 
 ### Update the SharePoint Package Version
 

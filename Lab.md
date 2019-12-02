@@ -23,7 +23,7 @@ To complete this lab, you need the following:
 
 ## Exercise 1: Deploying SPFx Solutions
 
-In this exercise you will create a simple SharePoint Framework (SPFx) client-side web part that will be used in trying out different deployment configurations.
+In this exercise you will create a simple SharePoint Framework (SPFx) client-side web part that will be used to try out different deployment configurations.
 
 > NOTE: The instructions below assume you are using v1.9.1 of the SharePoint Framework Yeoman generator.
 
@@ -145,7 +145,7 @@ In the previous exercise you worked with the Tenant-scoped App Catalog. In this 
 1. Enable a site collection scoped app catalog:
     1. Navigate to an existing site collection.
     1. Select **Site Contents** from the left-hand navigation.
-    1. In the list of lists on the **Site Contents** page, look for a library named **Apps for SharePoint**. If it is present, you can skip to the next step of this exercise. Otherwise you will need to create the site collection scoped app catalog.
+    1. In the list of lists on the **Site Contents** page, look for a library named **Apps for SharePoint**. If it is present, you can skip to the next step of this exercise. Otherwise you will need to create the site collection-scoped app catalog.
     1. Depending on your development platform, create a new site collection scoped app catalog:
 
         If you are using Windows, you can use the [SharePoint Online Management Shell](https://www.microsoft.com/download/details.aspx?id=35588) PowerShell module:
@@ -215,9 +215,9 @@ In the previous exercise you worked with the Tenant-scoped App Catalog. In this 
 
 In this exercise you will learn how to change the various version numbers in SharePoint Framework components and packages, as well as how this impacts your deployments.
 
-> **NOTE:** This exercise assumes you completed exercise 1 in creating a SPFx solution and deployed the package to a site collection scoped app catalog as demonstrated in exercise 2. You can locate the solution from exercise 1 in the [Demos/01-deployment](./Demos/01-deployment) folder.
+> **NOTE:** This exercise assumes you completed both exercise 1 and exercise 2. That is, you've deployed the package to a site collection-scoped app catalog. You can locate the solution from exercise 1 in the [Demos/01-deployment](./Demos/01-deployment) folder.
 >
-> **NOTE:** Whenever you update the code within a SPFx solution, regardless if you decide to change the version number of the SPFx component or package as demonstrated in this exercise, when you upload a new package, all existing code will be updated to what is in the package.
+> **NOTE:** Regardless if you decide to change the version number of the SPFx component or package as demonstrated in this exercise, when you upload a new package all existing code will be updated to what is in that package.
 
 ### Update the Component's Version Number
 
@@ -304,7 +304,7 @@ In this exercise you will learn how to change the various version numbers in Sha
     1. Select the expand icon, a diagonal line with two arrows in the top right corner, to expand the web part toolbox:
     1. Scroll to the bottom and notice the new web part is not listed. This is because web parts are added to the web part gallery by activating a feature.
 
-> When the package was deployed the features within it were activated. Without versioning the package, SharePoint does not see any changes within the package and thus, it does not reactivate any existing, or activate any new features.
+> When the package was deployed, the features within it were activated. Without versioning the package, SharePoint does not see any changes within it, thus it does not activate or reactivate any new or existing features.
 
 ### Update the SharePoint Package Version
 

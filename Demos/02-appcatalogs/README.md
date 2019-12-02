@@ -5,7 +5,7 @@ In the previous demo you worked with the Tenant-scoped App Catalog. In this demo
 1. Enable a site collection scoped app catalog:
     1. Navigate to an existing site collection.
     1. Select **Site Contents** from the left-hand navigation.
-    1. In the list of lists on the **Site Contents** page, look for a library named **Apps for SharePoint**. If it is present, you can skip to the next step of this demo. Otherwise you will need to create the site collection scoped app catalog.
+    1. In the list of lists on the **Site Contents** page, look for a library named **Apps for SharePoint**. If it is present, you can skip to the next step of this demo. Otherwise you will need to create the site collection-scoped app catalog.
     1. Depending on your development platform, create a new site collection scoped app catalog:
 
         If you are using Windows, you can use the [SharePoint Online Management Shell](https://www.microsoft.com/download/details.aspx?id=35588) PowerShell module:
