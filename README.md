@@ -10,15 +10,15 @@ The lab for this module is available in multiple units within the associated Mic
 
 - [Exercise - Deploy SharePoint Framework solutions to tenant App Catalog](https://docs.microsoft.com/learn/modules/sharepoint-spfx-deployment/3-exercise-deploy-tenant-app-catalog)
 
-    In this exercise, you'll create a SharePoint Framework (SPFx) client-side web part that will be used to try different deployment configurations.
+  In this exercise, you'll create a SharePoint Framework (SPFx) client-side web part that will be used to try different deployment configurations.
 
 - [Exercise - Deploy SharePoint Framework solutions to a site collection App Catalog](https://docs.microsoft.com/learn/modules/sharepoint-spfx-deployment/5-exercise-deploy-site-collection-app-catalog)
 
-    In this exercise, you'll learn how to enable a site collection-scoped App Catalog and deploy an app to it.
+  In this exercise, you'll learn how to enable a site collection-scoped App Catalog and deploy an app to it.
 
 - [Exercise - Version numbers in SharePoint Framework projects, packages, and components](https://docs.microsoft.com/learn/modules/sharepoint-spfx-deployment/7-exercise-project-component-versions)
 
-    In this exercise, you'll learn how to change the various version numbers in SharePoint Framework components, packages, and how this impacts your deployments.
+  In this exercise, you'll learn how to change the various version numbers in SharePoint Framework components, packages, and how this impacts your deployments.
 
 ## Demos
 
@@ -32,7 +32,7 @@ This module has been recorded and is available in the SharePoint Development You
 
 ## Contributors
 
-|        Roles         |                                                   Author(s)                                                    |
+| Roles                | Author(s)                                                                                                      |
 | -------------------- | -------------------------------------------------------------------------------------------------------------- |
 | Lab Manuals / Slides | Andrew Connell (Microsoft MVP, [Voitanos](//github.com/voitanos)) [@andrewconnell](//github.com/andrewconnell) |
 | QA                   | Rob Windsor (Microsoft MVP, PAIT Group) [@rob-windsor](//github.com/rob-windsor)                               |
@@ -40,8 +40,9 @@ This module has been recorded and is available in the SharePoint Development You
 
 ## Version history
 
-| Version |       Date        |                      Comments                      |
+| Version | Date              | Comments                                           |
 | ------- | ----------------- | -------------------------------------------------- |
+| 1.8     | August 31, 2020   | FY2021Q1 content refresh                           |
 | 1.7     | March 10, 2020    | FY2020Q3 content refresh & port module to MS Learn |
 | 1.6     | December 6, 2019  | FY2020Q2 content refresh                           |
 | 1.5     | September 2, 2019 | FY2020Q1 content refresh                           |

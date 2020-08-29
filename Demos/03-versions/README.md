@@ -1,6 +1,6 @@
 # DEMO: Version numbers in SharePoint Framework projects, packages, and components
 
-This completed project is the result of the lab exercise **Version numbers in SharePoint Framework projects, packages, and components** that is referenced in the [README](../../) in this repo.
+This completed project is the result of the lab exercise **Version numbers in SharePoint Framework projects, packages, and components** that is referenced in the [README](../../README.md) in this repo.
 
 ## Prerequisites
 

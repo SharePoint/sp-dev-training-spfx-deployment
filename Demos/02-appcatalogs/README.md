@@ -1,6 +1,6 @@
 # DEMO: Deploy SharePoint Framework solutions to a site collection App Catalog
 
-This completed project is the result of the lab exercise **Deploy SharePoint Framework solutions to a site collection App Catalog** that is referenced in the [README](../../) in this repo.
+This completed project is the result of the lab exercise **Deploy SharePoint Framework solutions to a site collection App Catalog** that is referenced in the [README](../../README.md) in this repo.
 
 ## Prerequisites
 
