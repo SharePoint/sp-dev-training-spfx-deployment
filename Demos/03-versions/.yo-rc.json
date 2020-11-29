@@ -4,7 +4,7 @@
     "environment": "spo",
     "version": "1.11.0",
     "libraryName": "deployment-demo",
-    "libraryId": "c7840d83-4b72-44b9-866f-be5535cc992f",
+    "libraryId": "797053b7-c3de-49d2-b71e-81718e6c0137",
     "packageManager": "npm",
     "isDomainIsolated": false,
     "componentType": "webpart"
