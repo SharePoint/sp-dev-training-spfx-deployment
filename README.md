@@ -28,7 +28,7 @@ The lab for this module is available in multiple units within the associated Mic
 
 ## Watch the Module - Video
 
-This module has been recorded and is available in the SharePoint Development YouTube channel: [SharePoint Framework Training - Deploy SharePoint Framework components to production](https://www.youtube.com/watch?v=DLi6ZviEIJ8)
+This module has been recorded and is available in the SharePoint Development YouTube channel: [SharePoint Framework Training - Deploy SharePoint Framework components to production](https://www.youtube.com/watch?v=DLi6ZviEIJ8&list=PLR9nK3mnD-OV-RPXQ3Lco845qoEy7VJoc)
 
 ## Contributors
 
@@ -42,6 +42,7 @@ This module has been recorded and is available in the SharePoint Development You
 
 | Version |        Date        |                      Comments                      |
 | ------- | ------------------ | -------------------------------------------------- |
+| 1.13    | December 8, 2021   | FY2022Q2 content refresh; retire local workbench   |
 | 1.12    | September 13, 2021 | FY2022Q1 content refresh                           |
 | 1.11    | June 17, 2021      | FY2021Q4 content refresh                           |
 | 1.10    | March 6, 2021      | FY2021Q3 content refresh                           |
