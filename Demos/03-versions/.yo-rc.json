@@ -3,9 +3,9 @@
     "plusBeta": false,
     "isCreatingSolution": false,
     "environment": "spo",
-    "version": "1.13.0",
+    "version": "1.13.1",
     "libraryName": "deployment-demo",
-    "libraryId": "9148942e-45fc-40e9-9898-a7f359414e32",
+    "libraryId": "75c2e5b9-694f-4cda-b11c-58035cc56d0c",
     "packageManager": "npm",
     "isDomainIsolated": false,
     "componentType": "webpart"
