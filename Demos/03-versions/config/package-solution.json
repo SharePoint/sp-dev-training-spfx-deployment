@@ -2,17 +2,43 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
     "name": "deployment-demo-client-side-solution",
-    "id": "75c2e5b9-694f-4cda-b11c-58035cc56d0c",
-    "version": "1.2.0.0",
+    "id": "8f971fc1-644b-4117-b63a-cb17a5ea6551",
+    "version": "1.2.0.1",
     "includeClientSideAssets": true,
+    "skipFeatureDeployment": false,
     "isDomainIsolated": false,
     "developer": {
       "name": "",
       "websiteUrl": "",
       "privacyUrl": "",
       "termsOfUseUrl": "",
-      "mpnId": "Undefined-1.13.1"
-    }
+      "mpnId": "Undefined-1.14.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "DeploymentDemo description"
+      },
+      "longDescription": {
+        "default": "DeploymentDemo description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "deployment-demo Feature",
+        "description": "The feature that activates elements of the deployment-demo solution.",
+        "id": "a2a0db38-4821-4cda-87da-1d3ce4124660",
+        "version": "1.2.0.1",
+        "assets": {
+          "elementManifests": [
+            "elements.xml",
+            "ClientSideInstance.xml"
+          ]
+        }
+      }
+    ]
   },
   "paths": {
     "zippedPackage": "solution/deployment-demo.sppkg"
