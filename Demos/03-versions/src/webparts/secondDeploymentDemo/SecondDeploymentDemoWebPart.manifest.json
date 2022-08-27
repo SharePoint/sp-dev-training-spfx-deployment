@@ -1,6 +1,6 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "cca358c0-f6d5-4c4d-a470-675617a67954",
+  "id": "74bb38a0-82f2-45b0-ae46-66fb4554a059",
   "alias": "SecondDeploymentDemoWebPart",
   "componentType": "WebPart",
 
@@ -16,8 +16,8 @@
   "supportsThemeVariants": true,
 
   "preconfiguredEntries": [{
-    "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
-    "group": { "default": "Other" },
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Advanced
+    "group": { "default": "Advanced" },
     "title": { "default": "Second Deployment Demo" },
     "description": { "default": "Second Deployment Demo description" },
     "officeFabricIconFontName": "Page",

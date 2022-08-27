@@ -22,12 +22,6 @@ export default class SecondDeploymentDemoWebPart extends BaseClientSideWebPart<I
   private _isDarkTheme: boolean = false;
   private _environmentMessage: string = '';
 
-  protected onInit(): Promise<void> {
-    this._environmentMessage = this._getEnvironmentMessage();
-
-    return super.onInit();
-  }
-
   public render(): void {
     this.domElement.innerHTML = `
       <section class="${styles.secondDeploymentDemo} ${!!this.context.sdks.microsoftTeams ? styles.teams : ''}">
@@ -38,6 +32,14 @@ export default class SecondDeploymentDemoWebPart extends BaseClientSideWebPart<I
         </div>
       </section>`;
   }
+
+  protected onInit(): Promise<void> {
+    this._environmentMessage = this._getEnvironmentMessage();
+
+    return super.onInit();
+  }
+
+
 
   private _getEnvironmentMessage(): string {
     if (!!this.context.sdks.microsoftTeams) { // running in Teams
@@ -56,9 +58,12 @@ export default class SecondDeploymentDemoWebPart extends BaseClientSideWebPart<I
     const {
       semanticColors
     } = currentTheme;
-    this.domElement.style.setProperty('--bodyText', semanticColors.bodyText);
-    this.domElement.style.setProperty('--link', semanticColors.link);
-    this.domElement.style.setProperty('--linkHovered', semanticColors.linkHovered);
+
+    if (semanticColors) {
+      this.domElement.style.setProperty('--bodyText', semanticColors.bodyText || null);
+      this.domElement.style.setProperty('--link', semanticColors.link || null);
+      this.domElement.style.setProperty('--linkHovered', semanticColors.linkHovered || null);
+    }
 
   }
 

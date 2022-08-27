@@ -2,12 +2,10 @@ import { Log } from '@microsoft/sp-core-library';
 import {
   BaseListViewCommandSet,
   Command,
-  IListViewCommandSetListViewUpdatedParameters,
-  IListViewCommandSetExecuteEventParameters
+  IListViewCommandSetExecuteEventParameters,
+  ListViewStateChangedEventArgs
 } from '@microsoft/sp-listview-extensibility';
 import { Dialog } from '@microsoft/sp-dialog';
-
-import * as strings from 'ThirdDeploymentDemoCommandSetStrings';
 
 /**
  * If your command set uses the ClientSideComponentProperties JSON input,
@@ -26,27 +24,45 @@ export default class ThirdDeploymentDemoCommandSet extends BaseListViewCommandSe
 
   public onInit(): Promise<void> {
     Log.info(LOG_SOURCE, 'Initialized ThirdDeploymentDemoCommandSet');
-    return Promise.resolve();
-  }
 
-  public onListViewUpdated(event: IListViewCommandSetListViewUpdatedParameters): void {
+    // initial state of the command's visibility
     const compareOneCommand: Command = this.tryGetCommand('COMMAND_1');
-    if (compareOneCommand) {
-      // This command should be hidden unless exactly one row is selected.
-      compareOneCommand.visible = event.selectedRows.length === 1;
-    }
+    compareOneCommand.visible = false;
+
+    this.context.listView.listViewStateChangedEvent.add(this, this._onListViewStateChanged);
+
+    return Promise.resolve();
   }
 
   public onExecute(event: IListViewCommandSetExecuteEventParameters): void {
     switch (event.itemId) {
       case 'COMMAND_1':
-        Dialog.alert(`${this.properties.sampleTextOne}`);
+        Dialog.alert(`${this.properties.sampleTextOne}`).catch(() => {
+          /* handle error */
+        });
         break;
       case 'COMMAND_2':
-        Dialog.alert(`${this.properties.sampleTextTwo}`);
+        Dialog.alert(`${this.properties.sampleTextTwo}`).catch(() => {
+          /* handle error */
+        });
         break;
       default:
         throw new Error('Unknown command');
     }
+  }
+
+  private _onListViewStateChanged = (args: ListViewStateChangedEventArgs): void => {
+    Log.info(LOG_SOURCE, 'List view state changed');
+
+    const compareOneCommand: Command = this.tryGetCommand('COMMAND_1');
+    if (compareOneCommand) {
+      // This command should be hidden unless exactly one row is selected.
+      compareOneCommand.visible = this.context.listView.selectedRows?.length === 1;
+    }
+
+    // TODO: Add your logic here
+
+    // You should call this.raiseOnChage() to update the command bar
+    this.raiseOnChange();
   }
 }

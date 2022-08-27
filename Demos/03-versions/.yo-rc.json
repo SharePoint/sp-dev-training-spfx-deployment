@@ -2,9 +2,9 @@
   "@microsoft/generator-sharepoint": {
     "plusBeta": false,
     "isCreatingSolution": false,
-    "version": "1.14.0",
+    "version": "1.15.2",
     "libraryName": "deployment-demo",
-    "libraryId": "8f971fc1-644b-4117-b63a-cb17a5ea6551",
+    "libraryId": "05f62d33-1d66-4e44-b288-d680d2a5d53d",
     "environment": "spo",
     "packageManager": "npm",
     "solutionName": "DeploymentDemo",
