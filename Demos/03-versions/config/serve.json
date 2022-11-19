@@ -7,7 +7,7 @@
     "default": {
       "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
       "customActions": {
-        "0f3c707d-5769-4799-9481-41f54ecebee3": {
+        "fab49a5d-0eec-4959-8ba9-28a9090ee8ef": {
           "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
           "properties": {
             "sampleTextOne": "One item is selected in the list",
@@ -19,7 +19,7 @@
     "thirdDeploymentDemo": {
       "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
       "customActions": {
-        "0f3c707d-5769-4799-9481-41f54ecebee3": {
+        "fab49a5d-0eec-4959-8ba9-28a9090ee8ef": {
           "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
           "properties": {
             "sampleTextOne": "One item is selected in the list",
