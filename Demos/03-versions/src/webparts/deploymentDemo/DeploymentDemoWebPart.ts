@@ -32,7 +32,7 @@ export default class DeploymentDemoWebPart extends BaseClientSideWebPart<IDeploy
         </div>
       </section>`;
   }
-  
+
   protected onInit(): Promise<void> {
     this._environmentMessage = this._getEnvironmentMessage();
 
