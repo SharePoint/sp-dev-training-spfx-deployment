@@ -2,21 +2,21 @@
 
 This module will introduce you to utilizing external APIs in your SharePoint Framework projects.
 
-> This module is also published as a Microsoft Learn module: [Deploy SharePoint Framework components to production](https://docs.microsoft.com/learn/modules/sharepoint-spfx-deployment)
+> This module is also published as a Microsoft Learn module: [Deploy SharePoint Framework components to production](https://learn.microsoft.com/training/modules/sharepoint-spfx-deployment)
 
 ## Lab - Deploy SharePoint Framework components to production
 
 The lab for this module is available in multiple units within the associated Microsoft Learn module. Use the following links to jump to the specific unit. Each Microsoft Learn unit represents a different lab exercise & demo in the presentation.
 
-- [Exercise - Deploy SharePoint Framework solutions to tenant App Catalog](https://docs.microsoft.com/learn/modules/sharepoint-spfx-deployment/3-exercise-deploy-tenant-app-catalog)
+- [Exercise - Deploy SharePoint Framework solutions to tenant App Catalog](https://learn.microsoft.com/training/modules/sharepoint-spfx-deployment/3-exercise-deploy-tenant-app-catalog)
 
   In this exercise, you'll create a SharePoint Framework (SPFx) client-side web part that will be used to try different deployment configurations.
 
-- [Exercise - Deploy SharePoint Framework solutions to a site collection App Catalog](https://docs.microsoft.com/learn/modules/sharepoint-spfx-deployment/5-exercise-deploy-site-collection-app-catalog)
+- [Exercise - Deploy SharePoint Framework solutions to a site collection App Catalog](https://learn.microsoft.com/training/modules/sharepoint-spfx-deployment/5-exercise-deploy-site-collection-app-catalog)
 
   In this exercise, you'll learn how to enable a site collection-scoped App Catalog and deploy an app to it.
 
-- [Exercise - Version numbers in SharePoint Framework projects, packages, and components](https://docs.microsoft.com/learn/modules/sharepoint-spfx-deployment/7-exercise-project-component-versions)
+- [Exercise - Version numbers in SharePoint Framework projects, packages, and components](https://learn.microsoft.com/training/modules/sharepoint-spfx-deployment/7-exercise-project-component-versions)
 
   In this exercise, you'll learn how to change the various version numbers in SharePoint Framework components, packages, and how this impacts your deployments.
 
@@ -42,6 +42,8 @@ This module has been recorded and is available in the SharePoint Development You
 
 | Version |        Date        |                      Comments                      |
 | ------- | ------------------ | -------------------------------------------------- |
+| 1.19    | May 5, 2023        | FY2023Q4 content refresh; update to SPFx v1.17.1   |
+| 1.18    | February 28, 2023  | FY2023Q3 content refresh; update to SPFx v1.16.1   |
 | 1.17    | December 5, 2022   | FY2023Q1 content refresh                           |
 | 1.16    | September 5, 2022  | FY2023Q1 content refresh; update for SPFx v1.15.2  |
 | 1.15    | May 2, 2022        | FY2022Q4 content refresh; update for SPFx v1.14    |

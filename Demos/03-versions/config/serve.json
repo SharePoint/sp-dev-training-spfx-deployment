@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
   "port": 4321,
   "https": true,
-  "initialPage": "https://enter-your-SharePoint-site/_layouts/workbench.aspx",
+  "initialPage": "https://{tenantDomain}/_layouts/workbench.aspx",
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "pageUrl": "https://{tenantDomain}/SitePages/myPage.aspx",
       "customActions": {
-        "fab49a5d-0eec-4959-8ba9-28a9090ee8ef": {
+        "2370ebaa-5a83-4647-9c98-a3283bacea06": {
           "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
           "properties": {
             "sampleTextOne": "One item is selected in the list",
@@ -17,9 +17,9 @@
       }
     },
     "thirdDeploymentDemo": {
-      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "pageUrl": "https://{tenantDomain}/SitePages/myPage.aspx",
       "customActions": {
-        "fab49a5d-0eec-4959-8ba9-28a9090ee8ef": {
+        "2370ebaa-5a83-4647-9c98-a3283bacea06": {
           "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
           "properties": {
             "sampleTextOne": "One item is selected in the list",

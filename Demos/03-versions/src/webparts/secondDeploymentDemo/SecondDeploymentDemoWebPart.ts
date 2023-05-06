@@ -1,6 +1,3 @@
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT license.
-
 import { Version } from '@microsoft/sp-core-library';
 import {
   IPropertyPaneConfiguration,
@@ -32,21 +29,39 @@ export default class SecondDeploymentDemoWebPart extends BaseClientSideWebPart<I
         </div>
       </section>`;
   }
-  
-  protected onInit(): Promise<void> {
-    this._environmentMessage = this._getEnvironmentMessage();
 
-    return super.onInit();
+  protected onInit(): Promise<void> {
+    return this._getEnvironmentMessage().then(message => {
+      this._environmentMessage = message;
+    });
   }
 
 
 
-  private _getEnvironmentMessage(): string {
-    if (!!this.context.sdks.microsoftTeams) { // running in Teams
-      return this.context.isServedFromLocalhost ? strings.AppLocalEnvironmentTeams : strings.AppTeamsTabEnvironment;
+  private _getEnvironmentMessage(): Promise<string> {
+    if (!!this.context.sdks.microsoftTeams) { // running in Teams, office.com or Outlook
+      return this.context.sdks.microsoftTeams.teamsJs.app.getContext()
+        .then(context => {
+          let environmentMessage: string = '';
+          switch (context.app.host.name) {
+            case 'Office': // running in Office
+              environmentMessage = this.context.isServedFromLocalhost ? strings.AppLocalEnvironmentOffice : strings.AppOfficeEnvironment;
+              break;
+            case 'Outlook': // running in Outlook
+              environmentMessage = this.context.isServedFromLocalhost ? strings.AppLocalEnvironmentOutlook : strings.AppOutlookEnvironment;
+              break;
+            case 'Teams': // running in Teams
+              environmentMessage = this.context.isServedFromLocalhost ? strings.AppLocalEnvironmentTeams : strings.AppTeamsTabEnvironment;
+              break;
+            default:
+              throw new Error('Unknown host');
+          }
+
+          return environmentMessage;
+        });
     }
 
-    return this.context.isServedFromLocalhost ? strings.AppLocalEnvironmentSharePoint : strings.AppSharePointEnvironment;
+    return Promise.resolve(this.context.isServedFromLocalhost ? strings.AppLocalEnvironmentSharePoint : strings.AppSharePointEnvironment);
   }
 
   protected onThemeChanged(currentTheme: IReadonlyTheme | undefined): void {
