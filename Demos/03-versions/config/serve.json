@@ -7,7 +7,7 @@
     "default": {
       "pageUrl": "https://{tenantDomain}/SitePages/myPage.aspx",
       "customActions": {
-        "2370ebaa-5a83-4647-9c98-a3283bacea06": {
+        "913c1d11-24b4-4966-a850-87122cc3b0b5": {
           "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
           "properties": {
             "sampleTextOne": "One item is selected in the list",
@@ -19,7 +19,7 @@
     "thirdDeploymentDemo": {
       "pageUrl": "https://{tenantDomain}/SitePages/myPage.aspx",
       "customActions": {
-        "2370ebaa-5a83-4647-9c98-a3283bacea06": {
+        "913c1d11-24b4-4966-a850-87122cc3b0b5": {
           "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
           "properties": {
             "sampleTextOne": "One item is selected in the list",

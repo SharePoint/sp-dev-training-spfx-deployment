@@ -1,10 +1,10 @@
 import { Version } from '@microsoft/sp-core-library';
 import {
-  IPropertyPaneConfiguration,
+  type IPropertyPaneConfiguration,
   PropertyPaneTextField
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
-import { IReadonlyTheme } from '@microsoft/sp-component-base';
+import type { IReadonlyTheme } from '@microsoft/sp-component-base';
 import { escape } from '@microsoft/sp-lodash-subset';
 
 import styles from './DeploymentDemoWebPart.module.scss';
@@ -21,13 +21,13 @@ export default class DeploymentDemoWebPart extends BaseClientSideWebPart<IDeploy
 
   public render(): void {
     this.domElement.innerHTML = `
-      <section class="${styles.deploymentDemo} ${!!this.context.sdks.microsoftTeams ? styles.teams : ''}">
-        <div class="${styles.welcome}">
-          <h2>Well done, ${escape(this.context.pageContext.user.displayName)}!</h2>
-          <div>Web part title: <strong>${escape(this.title)}</strong></div>
-          <div>Component version: <strong>${escape(this.manifest.version)}</strong></div>
-        </div>
-      </section>`;
+    <section class="${styles.deploymentDemo} ${!!this.context.sdks.microsoftTeams ? styles.teams : ''}">
+      <div class="${styles.welcome}">
+        <h2>Well done, ${escape(this.context.pageContext.user.displayName)}!</h2>
+        <div>Web part title: <strong>${escape(this.title)}</strong></div>
+        <div>Component version: <strong>${escape(this.manifest.version)}</strong></div>
+      </div>
+    </section>`;
   }
 
   protected onInit(): Promise<void> {
@@ -51,10 +51,11 @@ export default class DeploymentDemoWebPart extends BaseClientSideWebPart<IDeploy
               environmentMessage = this.context.isServedFromLocalhost ? strings.AppLocalEnvironmentOutlook : strings.AppOutlookEnvironment;
               break;
             case 'Teams': // running in Teams
+            case 'TeamsModern':
               environmentMessage = this.context.isServedFromLocalhost ? strings.AppLocalEnvironmentTeams : strings.AppTeamsTabEnvironment;
               break;
             default:
-              throw new Error('Unknown host');
+              environmentMessage = strings.UnknownEnvironment;
           }
 
           return environmentMessage;
