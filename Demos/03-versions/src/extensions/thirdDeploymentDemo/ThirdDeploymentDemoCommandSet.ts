@@ -1,9 +1,9 @@
 import { Log } from '@microsoft/sp-core-library';
 import {
   BaseListViewCommandSet,
-  Command,
-  IListViewCommandSetExecuteEventParameters,
-  ListViewStateChangedEventArgs
+  type Command,
+  type IListViewCommandSetExecuteEventParameters,
+  type ListViewStateChangedEventArgs
 } from '@microsoft/sp-listview-extensibility';
 import { Dialog } from '@microsoft/sp-dialog';
 
