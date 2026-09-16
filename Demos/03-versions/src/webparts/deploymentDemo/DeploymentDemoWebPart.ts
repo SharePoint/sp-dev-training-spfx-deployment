@@ -9,6 +9,8 @@ import { escape } from '@microsoft/sp-lodash-subset';
 
 import styles from './DeploymentDemoWebPart.module.scss';
 import * as strings from 'DeploymentDemoWebPartStrings';
+import welcomeDark from './assets/welcome-dark.png';
+import welcomeLight from './assets/welcome-light.png';
 
 export interface IDeploymentDemoWebPartProps {
   description: string;
@@ -23,7 +25,7 @@ export default class DeploymentDemoWebPart extends BaseClientSideWebPart<IDeploy
     this.domElement.innerHTML = `
     <section class="${styles.deploymentDemo} ${!!this.context.sdks.microsoftTeams ? styles.teams : ''}">
       <div class="${styles.welcome}">
-        <img alt="" src="${this._isDarkTheme ? require('./assets/welcome-dark.png') : require('./assets/welcome-light.png')}" class="${styles.welcomeImage}" />
+        <img alt="" src="${this._isDarkTheme ? welcomeDark : welcomeLight}" class="${styles.welcomeImage}" />
         <h2>Well done, ${escape(this.context.pageContext.user.displayName)}!</h2>
         <div>Web part title: <strong>${escape(this.title)}</strong></div>
         <div>Component version: <strong>${escape(this.manifest.version)}</strong></div>
